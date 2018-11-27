@@ -1,0 +1,49 @@
+.Philosophy{
+    display: flex;
+    flex-direction: column;
+}
+#leftPhil{
+    width: 100vw;
+}
+#rightPhil{
+    width: 100vw;
+}
+#navigations{
+    display: none;
+}
+.HeroImage{
+    display: flex;
+    flex-direction: column;
+}
+#leftHero{
+    width: 100vw;
+    height: 70.63vh;
+    
+}
+#rightHero{
+    width: 100vw;
+    height: 0vh;
+    background: linear-gradient(135deg, rgb(1, 1, 250,.5) 0%,rgb(1, 1, 250,0.4) 25%,rgb(1, 1, 250,0) 60%,rgb(1, 1, 250,0) 100%);
+}
+}
+
+.serviceHead{
+    display: flex;
+    flex-direction: column;
+}
+#serviceIllustration{
+    width: 100vw;
+    height: 30em;
+
+    
+}
+.serviceHead{
+    display: flex;
+    flex-direction: column-reverse;
+}
+#serviceIllustration{
+    width: 100vw;
+    height: 30em;
+}
+
+

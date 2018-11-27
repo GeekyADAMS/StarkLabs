@@ -1,0 +1,673 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    margin:0;
+    padding:0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.navBar{
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0
+}
+.navDiv{width: 100vw;}
+
+#navity{
+	background-color: white;
+	float: right;
+	width: 0%;
+	height: 100vh;
+	margin-top: -1em;
+	display: block;
+	z-index: 3;
+	position: fixed;
+	top: 4em;
+	right: 0;
+	transition: .3s linear;
+}
+#navity p{
+	text-align: center;
+	font-family: Arial;
+	color: #1874CD;
+	padding: .5em;
+}
+#navity p:hover{
+	color: #000;
+}
+#navigate{
+    margin-top: 0;
+}
+#navigate > a {
+    text-decoration: none;
+}
+#navLogo{
+	display: block;
+	padding-top: 10em;
+	margin:auto;
+	height: 10em;
+	width: 10em;
+}
+#copy{
+	font-family: arial;
+	font-size: .6em;
+	color: #504d4d;
+    text-align: center;
+    margin-top: 5em;
+}
+
+#logo{
+    width: auto;
+    height: 1.5em;
+    margin: .5em 0 .5em 3em;
+}
+#navigations{
+    float: right;
+    margin: .5em 6em 0 0;
+}
+#navigationsUl > li{
+    list-style-type: none;
+    display: inline-block;
+}
+#navigationsUl > li > a{
+    text-decoration: none;
+    color: rgb(32, 31, 31);
+    font-family: 'Open Sans',sans-serif,arial;
+    font-size: .8em;
+}
+
+#navigationsUl > li > a > #AboutUs, #Portfolio, #ContactUs{
+    padding: 0 .6em 0 .6em;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transition: .5s ease-in;
+}
+#navigationsUl > li > a > #AboutUs:hover, #Portfolio:hover, #ContactUs:hover{
+    border-bottom: 2px solid rgb(1, 1, 250);
+    color: rgb(1, 1, 250);
+}
+#Order{
+    background-color: rgb(1, 1, 250);
+    color: white;
+    padding: .5em .8em .5em .8em;
+    border-radius: 12px;
+}
+#burgerMenu{
+    float: right;
+}
+#burger{
+    width: 1.5em;
+    height: 1.5em;
+    margin: .6em 2em .4em 0;
+}
+#burger:hover, #cancel:hover{
+    cursor: pointer;
+}
+#cancel{
+    width: 1.3em;
+    height: 1.3em;
+    margin: .6em 2em .4em 0;
+    display: none;
+}
+
+.HeroImage{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100vw;
+    margin-top: 3em;
+}
+#leftHero{
+    width: 50vw;
+    height: 93.63vh;
+    background-color: rgb(1, 1, 250);
+    overflow: hidden;
+}
+#rightHero{
+    width: 50vw;
+    height: 93.63vh;
+    background: linear-gradient(135deg, rgb(1, 1, 250,.5) 0%,rgb(1, 1, 250,0.4) 25%,rgb(1, 1, 250,0) 60%,rgb(1, 1, 250,0) 100%);
+}
+#rightHeroIlliustration{
+    margin: auto;
+    display: block;
+    width: 95%;
+    height: 75%;
+    padding-top: 8em;
+}
+#awesomeText{
+    font-family: 'Raleway', 'Open Sans', sans-serif,Arial, Helvetica ;
+    font-size: 2.5em;
+    margin: 4em .5em 0 2em;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+}
+#changeAwesome:after{
+    content: "AWESOMENESS!";
+    animation: change1 30s ease-in-out 1000;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transition: 1.5s linear;
+}
+@keyframes change1{
+    0% { 
+        content: "AWESOMENESS!";
+    }
+    30% {
+        content: "INNOVATION!";
+    }
+    60% {
+        content: "21st CENTURY!";
+    }
+
+
+}
+#flyBusiness{
+    font-family: 'Open Sans', sans-serif,Arial, Helvetica ;
+    font-size: 1.5em;
+    margin: .5em .5em 0 3.5em;
+    color: rgba(255,255,255,0.9);
+    font-weight: 500;
+    text-align: left;
+}
+#letsDeal{
+    font-family: 'Open Sans', sans-serif,Arial, Helvetica ;
+    font-size: 1em;
+    margin: 2.5em .5em 0 5em;
+    padding: 1em;
+    color: rgb(1, 1, 250);
+    font-weight: 500;
+    text-align: left;
+    background-color: white;
+    width: 6em;
+    border-radius: 6px;
+    text-align: center;
+}
+#letsDeal:hover{
+    background-color: rgb(3, 3, 228);
+    color: white;
+}
+#Explore{
+    font-family: 'Open Sans', sans-serif,Arial, Helvetica ;
+    font-size: 1em;
+    margin: 1em .5em 0 5em;
+    padding: 1em;
+    color: white;
+    font-weight: 500;
+    text-align: left;
+    width: 10em;
+    border: 1px solid white;
+    border-radius: 6px;
+    text-align: center;
+}
+#Explore:hover{
+    color: rgb(253, 215, 0);
+    border: 1px solid rgb(253, 215, 0);
+}
+span a{
+    text-decoration: none;
+}
+#a1{
+    color: rgb(1, 1, 250);
+}
+#a1:hover{
+    color: white;
+}
+#a2{
+    color: white;
+}
+#a2:hover{
+    color: rgb(253, 215, 0);
+}
+#scrollDown{
+    float:right;
+    margin: 7.5em 0 0 0;
+    width: 1.7em;
+    height: 1.7em;
+}
+#arrowDown{
+    float:right;
+    margin: 8em -1.7em 0 0;
+    width: 1.7em;
+    height: 2.2em;
+    transform: translateX(4em);
+}
+img.animated {
+	animation-delay: 1s;
+	animation-iteration-count: 30;
+	animation-duration: 3s;
+}
+
+.stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#statsProject, #statsCoffee, #statsClient, #statsAwards {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em 2.5em 1.5em 2.5em;
+}
+#statsProjectH, #statsCoffeeH, #statsClientH, #statsAwardsH{
+text-align: center;
+color: rgb(1, 1, 250);
+font-family: sans-serif;
+font-size: 2em;
+}
+#statsProjectT, #statsCoffeeT, #statsClientT, #statsAwardsT{
+text-align: center;
+color:rgb(104, 103, 103);
+font-family: arial;
+font-size: 0.8em;
+}
+
+.Philosophy{
+    display: flex;
+    flex-direction: row;
+}
+#leftPhil{
+    height: 57vh;
+    width: 50vw;
+    background-image: url('../images/StarkLabs_Office.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#leftPhil > div{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.2);
+}
+#rightPhil{
+    background-color: rgba(204, 202, 202, 0.1);
+    height: 57vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+}
+
+#OurP{
+    color: rgb(1, 1, 250);
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    padding: 2em 0 1em 2em;
+}
+#OurPwrap{
+    margin-top: 7em;
+    margin-left: 2em;
+}
+#OurPcaption{
+    color: black;
+    font-family: 'Open Sans', sans-serif, arial;
+    font-weight: 600;
+    font-size: 2.5em;
+    margin: 0 0 0 .75em;
+}
+#OurPtext{
+    width: 60%;
+    text-align: left;
+    color: rgb(139, 137, 137);
+    font-size: .7em;
+    font-family: arial;
+    margin: 2.5em 0 0 3em;
+}
+
+.services{
+    background-color: white;
+    width: 100vw;
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceHead{
+    display: flex;
+    flex-direction: row;
+}
+#serviceIllustration{
+    width: 60vw;
+    height: 30em;
+}
+#service{
+    color: rgb(1, 1, 250);
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    margin-top: 5.5em;
+    padding: 4em 0 .5em 0;
+    text-align: center;
+}
+#whatWeDo{
+    color: black;
+    font-family: 'Open Sans', sans-serif, arial;
+    font-weight: 600;
+    font-size: 2.5em;
+    text-align: center;
+}
+#whatWeDoCaption{
+    text-align: center;
+    color: rgb(139, 137, 137);
+    font-size: .72em;
+    font-family: arial;
+    margin-top: 2.2em;
+    padding: 0 2em 0 2em;
+}
+
+.serviceIcons1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.serviceIcons2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.generalAlign{
+    margin: 3em 1em 2em 1em;
+    width: 20vw;
+    height: auto;
+}
+.generalAlign > img{
+    width: 2.5em;
+    height: 2.5em;
+    display: block;
+    margin: auto;
+}
+.generalAlign > #webDevP{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif, Arial;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.generalAlign > #iconCaption{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif, Arial;
+    font-size: .71em;
+    font-weight: 500;
+    color: rgb(139, 137, 137);
+    padding: 20px 10px 0 10px;
+}
+
+.ourTeam{
+    background-color: rgb(12, 12, 12);
+    width: 100vw;
+    padding: 0 0 6em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+.ourTeamTexts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+}
+.ourTeamTexts > p{
+    text-align: center;
+}
+#ourTeamBlue{
+    color: rgb(1, 1, 250);
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 3em 0 .5em 0;
+}
+#ourTeamHead{
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif, arial;
+    font-weight: 600;
+    font-size: 1.8em;
+    text-align: center;
+}
+#ourTeamT{
+    text-align: center;
+    color: rgb(148, 145, 145);
+    font-size: .65em;
+    font-family: arial;
+    margin-top: 2.2em;
+    padding: 0 2em 0 2em;
+}
+.teamPic{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.teamPic > div{
+    width: 12em;
+    height: 12em;
+    background-color: rgb(43, 41, 41);
+    margin: -2.5em .25em 1em .25em;
+}
+#firstPerson{
+    background-image: url('../images/adeyiga.JPG');
+    background-size: cover;
+    background-position: center;
+}
+#secondPerson{
+    background-image: url('../images/adams.JPG');
+    background-size: cover;
+    background-position: center;
+}
+#thirdPerson{
+    background-image: url('../images/zee.JPG');
+    background-size: cover;
+    background-position: center;
+}
+#markUP{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease-in;
+}
+#markUP:hover{
+    background-color: rgba(1, 1, 250, 0.7);
+    opacity: 1;
+}
+.markUPhead {
+    color: whitesmoke;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: .7em;
+    font-weight: 600;
+    margin-top: 5em;
+}
+.markUPT{
+    color: whitesmoke;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: .6em;
+    font-weight: 600;
+    padding: 1em;
+}
+#markUP > div > a > img {
+    width: .8em;
+    height: .8em;
+    margin: 2em 0 0 .2em;
+    transition: .3s ease-in;
+}
+#markUP > div > a > img:hover {
+    transform: scale(2);
+}
+
+.dotIndicator{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.dotIndicator > span {
+    margin: 0 .15em 1em .15em;
+    font-family: 'Open Sans', sans-serif, arial;
+    font-size: 3.5em;
+}
+
+.clientTestimony{
+    background: linear-gradient(180deg, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.6) 2%,rgba(255,255,255,0.7) 47%,rgba(255,255,255,1) 100%), url('../images/testimonyBackground.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.testimonyContent{
+    background-color: white;
+    width: 40vw;
+    margin-top: 7em;
+    margin-bottom: .5em;
+}
+.testimonyContent > p{
+    text-align: center;
+}
+#clientOffset{
+    color: rgb(1, 1, 250);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 3.5em;
+    margin: -.73em 0 0 0;
+}
+#workWith{
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1em;
+}
+#quotationMark{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(1, 1, 250);
+    font-weight: 800;
+    font-size: 3em;
+    margin: .5em 0 .5em 0;
+}
+#testimonyText{
+    text-align: center;
+    color: rgb(139, 137, 137);
+    font-size: .72em;
+    font-family: arial;
+    margin-top: .5em;
+    padding: 0 2em 0 2em;
+}
+#testimonyPerson{
+    text-align: center;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    margin: .5em 0 5em 0;
+}
+
+.requestContact{
+    width: 100vw;
+    background-color: rgb(1, 1, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rCwrap{
+    width: 50%;
+    margin: 2em 0 2em 0;
+}
+#startPtext{
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.15em;
+    font-weight: 700;
+}
+#startPbutton{
+    float: right;
+    color: rgb(1, 1, 250);
+    background-color: whitesmoke;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8em;
+    font-weight: 600;
+    padding: .5em 1em .5em 1em;
+}
+#startPbutton:hover{
+    color: whitesmoke;
+    background-color: rgb(2, 2, 133);
+}
+
+.preFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footerLogo{
+    width: 2em;
+    height: 2em;
+    margin-left: 2em;
+    margin-right: 3.5em;
+}
+
+.preFooterWrap{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+}
+.preFooterCalign{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    margin: 2em 1.5em 2em 1.5em;
+}
+
+#preFooterAbout{
+    margin-left: 5em;
+    width: 50vw;
+}
+#aboutHead, #connectHead, #followHead{
+    color: rgb(1, 1, 250);
+    font-weight: 700;
+    font-size: .85em;
+    font-family: sans-serif, arial;
+    margin-bottom: 2em;
+}
+#aboutContent, #connectContent, .preFooterCalign > span {
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 600;
+    font-size: .85em;
+    color: #504d4d;
+}
+.preFooterCalign > span > a {
+    text-decoration: none;
+}
+.preFooterCalign > span > a:hover {
+    color: rgb(253, 215, 0);
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
+marquee{
+    margin: .5em;
+}
